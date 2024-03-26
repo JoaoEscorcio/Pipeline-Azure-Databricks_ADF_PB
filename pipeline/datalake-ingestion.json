@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/joaoescorcio.oliveira@outlook.com/Pipeline-Azure-Databricks_ADF_PB/Notebooks/Inbound to Bronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks_link",
+					"type": "LinkedServiceReference"
+				}
 			},
 			{
 				"name": "ingestion-to-silver",
@@ -33,7 +40,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/joaoescorcio.oliveira@outlook.com/Pipeline-Azure-Databricks_ADF_PB/Notebooks/Bronze to Silver"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks_link",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
